@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+  
+  char c;
+  float a, b;
+
+  cin >> c;
+  cin >> a;
+  cin >> b;
+  
+  if (c == '*') {
+    cout << a * b << endl;
+  } else if (c == '+') {
+    cout << a + b << endl;
+  } else if (c == '-') {
+    cout << a - b << endl;
+  } else if (c == '/') {
+    cout << fixed << setprecision(1) << (a / b) << endl;
+  }
+  
+  return 0;
+}
