@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+  
+  int potencia, resultado = 1;
+  cin >> potencia;
+
+  for (int i=0; i < potencia; i++) {
+      resultado *= 2;
+  }
+
+  cout << resultado << endl;
+  return 0;
+}
