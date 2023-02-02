@@ -1,0 +1,14 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+  
+  double mph;
+  cin >> mph;
+
+  cout << fixed << setprecision(2) << mph/0.62137 << endl;
+
+  return 0;
+}
