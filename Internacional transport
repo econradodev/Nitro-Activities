@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+// altura = z
+// conteiner = a largura b comprimento c altura , ou seja C = Z
+// navio = x de largura e y de comprimento , ou seja x = a e y = b
+
+long int a, b, c;
+long int x, y, z;
+
+int main() {
+  cin >> a >> b >> c;
+  cin >> x >> y >> z;
+  cout << (x/a)*(y/b)*(z/c) << endl;
+  return 0;
+}
