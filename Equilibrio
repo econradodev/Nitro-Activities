@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int p1, c1, p2, c2;
+int esq, dir;
+
+int main() {
+
+  cin >> p1 >> c1 >> p2 >> c2;
+
+  esq = p1 * c1;
+  dir = p2 * c2;
+
+  if (esq == dir) {
+    cout << '0' << endl;
+  }
+  if (esq > dir) {
+    cout << "-1" << endl;
+  }
+  if (dir > esq) {
+    cout << '1' << endl;
+  }
+  // Escreva seu código aqui
+  return 0;
+}
