@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int ass, i1, i2, n;
+
+int main() {
+  
+  ass = 7;
+  i1 = 20;
+  i2 = 140;
+
+  cin >> n;
+
+  if (n <=10) {
+    cout << '7' << endl;
+  }
+
+  if ((n > 10)&&(n <31)) {
+    cout << ass + ((n-10) * 1) << endl;
+  }
+
+  if ((n > 30)&&(n <101)) {
+    cout << ass + i1 + ((n-30) * 2) << endl;
+  }
+
+  if (n > 100) {
+    cout << ass + i1 + i2 + ((n-100) * 5) << endl;
+  }
+  return 0;
+}
