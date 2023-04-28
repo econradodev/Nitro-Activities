@@ -1,0 +1,39 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+void funcaoNotas (float notas [], int n) {
+  bool trocou = false;
+
+  cout << fixed << setprecision (1);
+
+  do {
+
+    trocou = false;
+
+    for (int i=0; i< n-1; i++) {
+      float save = 0;
+
+      if (notas [i] > notas [i+1]) {
+        swap (notas [i], notas [i+1]);
+        trocou = true;
+      }
+    }
+  } while (trocou);
+}
+
+int main() {
+  
+  int n = 5;
+  float notas [n];
+
+  for (int i=0; i<5; i++) {
+    cin >> notas [i];
+  }
+
+  funcaoNotas (notas, 5);
+
+  cout << (notas [1] + notas [2] + notas [3]) ;
+    
+  return 0;
+}
