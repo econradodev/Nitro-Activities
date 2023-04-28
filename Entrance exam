@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int questoes;
+  cin >> questoes;
+
+  char gabarito [questoes];
+  for (int i=0; i < questoes; i++) {
+    cin >> gabarito [i];
+  }
+
+  char alternativaMarcada [questoes];
+  for (int i=0; i < questoes; i++) {
+    cin >> alternativaMarcada [i];
+  }
+
+  int questoesCertas = 0;
+
+  for (int i=0; i < questoes; i++) {
+    if (alternativaMarcada [i] == gabarito [i]) {
+      questoesCertas++;
+    }
+  }
+  
+  cout << questoesCertas;
+
+
+  return 0;
+}
