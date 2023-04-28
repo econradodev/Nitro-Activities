@@ -1,0 +1,75 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  
+  char numerodigitado [15];
+  int contador = -1;
+
+  for (int i=0; i<15; i++) {
+    cin >> numerodigitado [i];
+  }
+  
+  for (int i=0; i<15; i++) {
+    if (numerodigitado [i] == 'A'||numerodigitado [i] == 'B'||numerodigitado [i] == 'C'){
+      numerodigitado [i] = '2';
+    } else if (numerodigitado [i] == 'D'||numerodigitado [i] == 'E'||numerodigitado [i] == 'F'){
+      numerodigitado [i] = '3';
+    } else if (numerodigitado [i] == 'G'||numerodigitado [i] == 'H'||numerodigitado [i] == 'I'){
+      numerodigitado [i] = '4';
+    } else if (numerodigitado [i] == 'J'||numerodigitado [i] == 'K'||numerodigitado [i] == 'L'){
+      numerodigitado [i] = '5';
+    } else if (numerodigitado [i] == 'M'||numerodigitado [i] == 'N'||numerodigitado [i] == 'O'){
+      numerodigitado [i] = '6';
+    } else if (numerodigitado [i] == 'P'||numerodigitado [i] == 'Q'||numerodigitado [i] == 'R'||numerodigitado [i] == 'S'){
+      numerodigitado [i] = '7';
+    } else if (numerodigitado [i] == 'T'||numerodigitado [i] == 'U'||numerodigitado [i] == 'V'){
+      numerodigitado [i] = '8';
+    } else if (numerodigitado [i] == 'W'||numerodigitado [i] == 'X'||numerodigitado [i] == 'Y'||numerodigitado [i] == 'Z'){
+      numerodigitado [i] = '9';
+    } 
+  }
+
+  for (int i=0; i < 15; i++) {
+    switch (numerodigitado [i]) {
+      case '0':
+      contador++;
+      break;
+      case '1':
+      contador++;
+      break;
+      case '2':
+      contador++;
+      break;
+      case '3':
+      contador++;
+      break;
+      case '4':
+      contador++;
+      break;
+      case '5':
+      contador++;
+      break;
+      case '6':
+      contador++;
+      break;
+      case '7':
+      contador++;
+      break;
+      case '8':
+      contador++;
+      break;
+      case '9':
+      contador++;
+      break;
+      case '-':
+      contador++;
+      break;
+    }
+  }
+
+  for (int i=0; i<=contador; i++) {
+    cout << numerodigitado [i];
+  }
+  return 0;
+}
