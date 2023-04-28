@@ -1,0 +1,36 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main() {
+  string a;
+  cin >> a;
+
+  int indice = 0;
+  int contador [a.size()] = {};
+
+  while (indice < a.size()) {
+    for (int i=0; i < a.size(); i++) {
+      if (a [indice] == a [i]) {
+        contador[i] += 1;
+      }
+    }
+    indice++;
+  }
+
+  int incrementadora = 0;
+  for (int i=0; i< a.size(); i++) {
+    if (contador [i] >= 2) {
+      incrementadora++;
+    }
+  }
+
+  if (incrementadora == a.size()) {
+    cout << "VALIDO" << endl;
+  } else {
+    cout << "INVALIDO" << endl;
+  }
+  
+
+  return 0;
+}
