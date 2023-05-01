@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int rodadas, aldo = 0, beto = 0, teste = 1, soma = 0;
+
+  while (cin >> rodadas && rodadas) {
+    cout << "Teste " << teste << endl;
+
+    for (int i = 0; i < rodadas; i++) {
+      soma = aldo - beto; 
+      cin >> aldo >> beto; 
+      soma = soma + aldo - beto; 
+      
+    }
+
+    if (soma < 0) {
+      cout << "Beto" << endl;
+    } else {
+      cout << "Aldo" << endl;
+    }
+
+    teste++;
+    soma = 0;
+
+    cout << endl;
+
+  }
+  return 0;
+}
