@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int intervalosDeTempo, tempo, velocidadeMedia, espaco = 0;
+
+  cin >> intervalosDeTempo;
+
+  for (int i = 0; i < intervalosDeTempo; i++) {
+    cin >> tempo >> velocidadeMedia ;
+
+    espaco += tempo * velocidadeMedia;
+
+  }
+
+  cout << espaco ;
+  return 0;
+}
