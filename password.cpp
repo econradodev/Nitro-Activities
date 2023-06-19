@@ -7,8 +7,8 @@ int countLower = 0, countUpper = 0, countNumbers = 0;
 string password;
 
 int main() {
-  cin >> chars >> lowercase >> upperCase >> numbers;
-  cin >> password;
+  cin >> chars >> lowercase >> upperCase >> numbers; //receives the minimum requirements for the password;
+  cin >> password; //gets the client password;
 
   if (password.size() >= chars) {
     
@@ -33,18 +33,18 @@ int main() {
         }
 
         if (countNumbers >= numbers) {
-          cout << "Ok =/" << endl;
+          cout << "Congrats, password accept" << endl;
         } else {
-          cout << "Ufa :)" << endl;
+          cout << "The password entered does not contain the requested requirements." << endl;
         }
       } else {
-        cout << "Ufa :)" << endl;
+        cout << "The password entered does not contain the requested requirements." << endl;
       }
     } else {
-      cout << "Ufa :)" << endl;
+      cout << "The password entered does not contain the requested requirements." << endl;
     }
   } else {
-    cout << "Ufa :)" << endl;
+    cout << "The password entered does not contain the requested requirements." << endl;
   } 
 
   return 0;
